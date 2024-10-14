@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'HeaderFont';
+    src: url('MV-SKIFER.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MainFont';
+    src: url('JetBrainsMono-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.horizontal-scroll-wrapper {
+  width: 100px;
+  height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+body {
+    background-color: #4793AF; /* Фон как в начале градиента SVG */
+     /* Удалите background-image */
+    font-family: 'MainFont', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0; /* Сброс отступов body */
+}
+
+.container {
+    width: 90%; /* или другое значение в зависимости от макета */
+    max-width: 1200px; /* Ограничение максимальной ширины */
+    margin: 0 auto; /* Центрирование контейнера */
+    padding: 20px; /* Добавление отступов внутри контейнера */
+}
+
+
+h1 {
+  font-family: 'HeaderFont', sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 3em;
+  color: #5c3d2e;
+}
+
+h2 {
+   font-family: 'HeaderFont', sans-serif;
+  border-bottom: 2px solid #b89278;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #5c3d2e;
+}
+
+p {
+    text-indent: 20px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+
+
+/* Футер */
+footer {
+    background-color: #34495e; /* Темно-серый фон */
+    color: white;
+    padding: 10px;
+    text-align: center; /* Центрируем ссылки */
+    margin-top: auto; /* Прижимаем футер к низу */
+
+}
+
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+}
